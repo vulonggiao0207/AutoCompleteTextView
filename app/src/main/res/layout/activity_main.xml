@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Demostration"
+        android:id="@+id/textView"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AutocompleteTextview and MultiAutocompleteTextview"
+        android:id="@+id/textView2"
+        android:textColor="#ff3eff0f"
+        android:textSize="18dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/autoCompleteTextView1" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="AutoComplete TextView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/multiAutoCompleteTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Multi Auto Complete "
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/autoCompleteTextView1"
+        android:layout_alignStart="@+id/autoCompleteTextView1" />
+
+</RelativeLayout>
